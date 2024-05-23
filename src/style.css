@@ -1,0 +1,133 @@
+:root {
+  --c-bg: hsl(0 0% 14%);
+  --c-fg: hsl(0 0% 87%);
+  --c-primary: hsl(237 100% 73%);
+  --c-primary-hover: hsl(237 90% 75%);
+  --c-primary-active: hsl(237 100% 65%);
+  --c-button-bg: hsl(0 0% 20%);
+  --c-button-bg-active: hsl(237 60% 30%);
+
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    avenir next,
+    avenir,
+    segoe ui,
+    helvetica neue,
+    helvetica,
+    cantarell,
+    ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  color-scheme: light dark;
+  color: var(--c-fg);
+  background-color: var(--c-bg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  gap: 2rem;
+  margin: 2rem 3vw 0 3vw;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:any-link {
+  color: var(--c-primary);
+  text-decoration: inherit;
+}
+:any-link:is(:hover, :focus, :focus-visible) {
+  color: var(--c-primary-hover);
+}
+:any-link:active {
+  color: var(--c-primary-active);
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  background-color: var(--c-button-bg);
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+button:hover {
+  border-color: var(--c-primary);
+}
+button:is(:focus, :focus-visible) {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button:active {
+  background-color: var(--c-button-bg-active);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  gap: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --c-fg: hsl(208 37% 20%);
+    --c-bg: hsl(0 0% 100%);
+    --c-primary: hsl(237 75% 50%);
+    --c-primary-hover: hsl(237 90% 65%);
+    --c-primary-active: hsl(237 100% 40%);
+    --c-button-bg: hsl(0 0% 95%);
+    --c-button-bg-active: hsl(237 100% 80%);
+  }
+}

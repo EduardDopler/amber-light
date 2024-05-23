@@ -1,0 +1,10 @@
+{
+  "service": "fc543622-236c-4c94-8fa9-944a3e5353fa",
+  "currentTemp": "fc540002-236c-4c94-8fa9-944a3e5353fa",
+  "targetTemp": "fc540003-236c-4c94-8fa9-944a3e5353fa",
+  "battery": "fc540007-236c-4c94-8fa9-944a3e5353fa",
+  "liquidLevel": "fc540005-236c-4c94-8fa9-944a3e5353fa",
+  "liquidState": "fc540008-236c-4c94-8fa9-944a3e5353fa",
+  "color": "fc540014-236c-4c94-8fa9-944a3e5353fa",
+  "pushEvents": "fc540012-236c-4c94-8fa9-944a3e5353fa"
+}

@@ -1,0 +1,9 @@
+dev.localhost {
+	reverse_proxy :5173
+	encode zstd gzip
+}
+
+preview.localhost {
+	reverse_proxy :4173
+	encode zstd gzip
+}
