@@ -4,12 +4,14 @@ export const ValueMapping = Object.freeze({
     30: "Not Empty",
   },
   LiquidState: {
+    0: "Unknown",
     1: "Empty",
     2: "Filling",
-    3: "Unknown",
+    3: "Cold, no temperature control",
     4: "Cooling",
     5: "Heating",
     6: "Stable Temperature",
+    7: "Warm, no temperature control",
   },
   BatteryCharging: {
     0: "Not Charging",
