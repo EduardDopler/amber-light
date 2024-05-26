@@ -1,6 +1,7 @@
 :root {
   --c-bg: hsl(0 0% 14%);
   --c-fg: hsl(0 0% 87%);
+  --c-fg-muted: hsl(0 0% 69%);
   --c-primary: hsl(237 100% 73%);
   --c-primary-hover: hsl(237 90% 75%);
   --c-primary-active: hsl(237 100% 65%);
@@ -53,7 +54,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   gap: 2rem;
-  margin: 2rem 3vw 0 3vw;
+  margin: 0 2rem;
+  padding-top: 2rem;
   line-height: 1.5;
 }
 
@@ -81,6 +83,12 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+footer {
+  margin: auto 0 1rem 0;
+  font-size: 0.7em;
+  color: var(--c-fg-muted);
 }
 
 :any-link {
@@ -112,18 +120,16 @@ button:active {
   background-color: var(--c-button-bg-active);
 }
 
-#app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1280px;
-  gap: 2rem;
+#emc-dashboard {
+  border-left: 0.5rem solid var(--c-button-bg);
+  padding-left: 0.7rem;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --c-fg: hsl(208 37% 20%);
     --c-bg: hsl(0 0% 100%);
+    --c-fg-muted: hsl(208 15% 35%);
     --c-primary: hsl(237 75% 50%);
     --c-primary-hover: hsl(237 90% 65%);
     --c-primary-active: hsl(237 100% 40%);

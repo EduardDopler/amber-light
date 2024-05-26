@@ -1,5 +1,17 @@
-<p id="emc-push-events">
-  <button id="emc-push-events-read-all" type="button" disabled>Read</button>
+<style>
+  emc-push-events {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+
+    #emc-push-events-checkbox-wrapper label {
+      margin-left: 0.5em;
+    }
+  }
+</style>
+<button id="emc-push-events-read-all" type="button" disabled>Read</button>
+<div id="emc-push-events-checkbox-wrapper">
   <input type="checkbox" id="emc-push-events-enabled" disabled />
   <label for="emc-push-events-enabled">Auto-update values</label>
-</p>
+</div>
