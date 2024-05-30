@@ -83,6 +83,8 @@ export class EmcConnect extends HTMLElement {
       this.setStatus(ConnectionStatus.Connected);
     } catch (e) {
       this.setStatus(ConnectionStatus.Error);
+      // prevent automatic reconnect attempt
+      this.constructor.disconnectRequested = true;
       device.gatt.disconnect();
       this.constructor.service = null;
       this.constructor.isConnected = false;
@@ -91,6 +93,8 @@ export class EmcConnect extends HTMLElement {
   }
 
   async tryReconnectToKnownDevices() {
+    // TODO check if getDevices is available, if not: explain Chromium flag
+
     const knownDevices = await navigator.bluetooth.getDevices();
     // no previously known devices -> cancel
     if (!knownDevices.length) {
