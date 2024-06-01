@@ -10,5 +10,6 @@ export function isChromiumBrowser() {
 
 export function formatTemp(numericValue) {
   // TODO use Intl.NumberFormat
+  // TODO use selected temperature unit (°C/°F)
   return `${numericValue * 0.01}°C`;
 }
