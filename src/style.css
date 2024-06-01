@@ -123,6 +123,10 @@ button:active {
 #emc-dashboard {
   border-left: 0.5rem solid var(--c-button-bg);
   padding-left: 0.7rem;
+
+  body:not([data-connection="connected"]) & {
+    opacity: 0.25;
+  }
 }
 
 @media (prefers-color-scheme: light) {

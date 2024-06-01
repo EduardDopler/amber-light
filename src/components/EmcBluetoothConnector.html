@@ -1,12 +1,25 @@
+<button id="emc-connect" type="button">Connect</button>
+
 <style>
-  emc-push-events {
+  emc-bluetooth-connector {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 2rem;
 
-    #emc-push-events-checkbox-wrapper label {
-      margin-left: 0.5em;
+    #emc-push-events-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75em;
+    }
+
+    #emc-push-events-enabled {
+      width: 1em;
+      height: 1em;
+    }
+
+    &:not([status="connected"]) label {
+      opacity: 0.25;
     }
   }
 </style>
