@@ -52,7 +52,6 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 320px;
-  min-height: 100vh;
   gap: 2rem;
   margin: 0 2rem;
   padding-top: 2rem;
@@ -86,7 +85,7 @@ h6 {
 }
 
 footer {
-  margin: auto 0 1rem 0;
+  margin: 1rem auto;
   font-size: 0.7em;
   color: var(--c-fg-muted);
 }
@@ -121,8 +120,7 @@ button:active {
 }
 
 #emc-dashboard {
-  border-left: 0.5rem solid var(--c-button-bg);
-  padding-left: 0.7rem;
+  flex: 1;
 
   body:not([data-connection="connected"]) & {
     opacity: 0.25;
