@@ -26,6 +26,6 @@
     "globals": "^15.3.0",
     "prettier": "~3.2.5",
     "@types/web-bluetooth": "^0.0.20",
-    "vite": "^5.2.12"
+    "vite": "^5.2.14"
   }
 }
