@@ -1,0 +1,22 @@
+<style>
+  #emc-notifications-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+
+    &:has(input:disabled) label {
+      opacity: 0.25;
+    }
+  }
+
+  #emc-notifications-enabled {
+    width: 1em;
+    height: 1em;
+  }
+</style>
+<div id="emc-notifications-checkbox-wrapper">
+  <input type="checkbox" id="emc-notifications-enabled" disabled />
+  <label for="emc-notifications-enabled"
+    >Notifications <span id="emc-notifications-suffix"></span
+  ></label>
+</div>

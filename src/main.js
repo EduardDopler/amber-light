@@ -1,13 +1,15 @@
 import "./style.css";
 import { EmcBluetoothConnector } from "./components/EmcBluetoothConnector.js";
+import { EmcNotifications } from "./components/EmcNotifications.js";
 import { EmcBattery } from "./components/EmcBattery.js";
 import { EmcCurrentTemp } from "./components/EmcCurrentTemp.js";
 import { EmcTargetTemp } from "./components/EmcTargetTemp.js";
-import { EmcLiquidLevel } from "./components/EmcLiquidLevel.js";
 import { EmcLiquidState } from "./components/EmcLiquidState.js";
+import { EmcLiquidLevel } from "./components/EmcLiquidLevel.js";
 import { EmcColor } from "./components/EmcColor.js";
 
 customElements.define("emc-bluetooth-connector", EmcBluetoothConnector);
+customElements.define("emc-notifications", EmcNotifications);
 customElements.define("emc-battery", EmcBattery);
 customElements.define("emc-current-temp", EmcCurrentTemp);
 customElements.define("emc-target-temp", EmcTargetTemp);
