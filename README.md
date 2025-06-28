@@ -34,15 +34,11 @@ If the LED still flashes after successfully connecting, just press the button ag
 
 ## Log/Debug
 
-See your browser's console for connection info, warnings errors.
+See your browser's console for connection info, warnings and errors.
 
 ## Roadmap
 
 - Setting target temperature, unit (°C/°F), mug color and mug name
-- Notifications
-  - Connection status
-  - Target temp reached
-  - Battery low/full
 - Styling
 - Offline support/PWA
 
@@ -65,4 +61,4 @@ Main goals:
 ## Special thanks
 
 - Paul Orlob: https://github.com/orlopau/ember-mug
-  - For reverse engineering the UUIDs and the meaning of values transmitted by the mug and the app 
+  - For reverse engineering the UUIDs and the meaning of values transmitted by the mug and the app
